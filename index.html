@@ -40,6 +40,7 @@
 
       <div class="header__hamburger">
         <img src="/images/icon-hamburger.svg" alt="hamburger" class="hamburger">
+        <img src="/images/icon-close.svg" alt="close" class="close">
       </div>
     </div>
   </header>
@@ -53,19 +54,21 @@
       <div class="right-side-bx"></div>
       <div class="container">
 
-        <div class="section__1--image">
-          <img src="/images/illustration-hero.svg" alt="illustration">
-        </div>
 
-        <div class="section__1--text">
-          <h1>A Simple Bookmark Manager</h1>
-          <p>A clean and simple interface to organize your favourite websites. Open a new
-            browser tab and see your sites load instantly. Try it for free.</p>
-        </div>
+        <img src="/images/illustration-hero.svg" alt="illustration">
 
-        <div class="section__1--link-button">
-          <a href="">Get it on Chrome</a>
-          <a href="">Get it on Firefox</a>
+        <div class="sub-container">
+
+          <div class="section__1--text">
+            <h1>A Simple Bookmark Manager</h1>
+            <p>A clean and simple interface to organize your favourite websites. Open a new
+              browser tab and see your sites load instantly. Try it for free.</p>
+          </div>
+
+          <div class="section__1--link-button">
+            <a href="">Get it on Chrome</a>
+            <a href="">Get it on Firefox</a>
+          </div>
         </div>
       </div>
     </section>
@@ -97,9 +100,9 @@
 
 
             <div id="simple" data-tab-content>
-              <div class="tab-image">
-                <img src="/images/illustration-features-tab-1.svg" alt="">
-              </div>
+
+              <img src="/images/illustration-features-tab-1.svg" class="tab-image" alt="">
+
               <div class="tab-text">
                 <h2>Bookmark in one click</h2>
                 <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
@@ -109,9 +112,9 @@
             </div>
 
             <div id="intelligent" data-tab-content class="active">
-              <div class="tab-image">
-                <img src="/images/illustration-features-tab-2.svg" alt="">
-              </div>
+
+              <img src="/images/illustration-features-tab-2.svg" class="tab-image" alt="">
+
               <div class="tab-text">
                 <h2>Intelligent search</h2>
                 <p>Our powerful search feature will help you find saved sites in no time at all.
@@ -121,9 +124,9 @@
             </div>
 
             <div id="share" data-tab-content>
-              <div class="tab-image">
-                <img src="/images/illustration-features-tab-3.svg" alt="">
-              </div>
+
+              <img src="/images/illustration-features-tab-3.svg" class="tab-image" alt="">
+
               <div class="tab-text">
                 <h2>Share your bookmarks</h2>
                 <p>Easily share your bookmarks and collections with others. Create a shareable
@@ -142,32 +145,36 @@
       <div class="container">
 
         <div class="section__3--text">
-          <h2 class="section__3--text-h2">Download the extension</h2>
-          <p class="section__3--text-p">
+
+          <h2 class="section__3--text">Download the extension</h2>
+          <p class="section__3--text">
             We’ve got more browsers in the pipeline. Please do let us know if you’ve
             got a favourite you’d like us to prioritize.
           </p>
         </div>
 
         <div class="section__3--browser">
-          <div class="section__3--browser-1">
-            <div class="broser-image"></div>
+          <div class="section__3--browser-1 browser">
+            <img src="/images/logo-chrome.svg" alt="chrome">
             <h3>Add to Chrome</h3>
             <p>Minimum version 62</p>
+            <img src="/images/bg-dots.svg" alt="dots">
             <button>Add & Install Extension</button>
           </div>
 
-          <div class="section__3--browser-2">
-            <div class="broser-image"></div>
+          <div class="section__3--browser-2 browser">
+            <img src="/images/logo-firefox.svg" alt="firefox">
             <h3>Add to Firefox</h3>
             <p>Minimum version 55</p>
+            <img src="/images/bg-dots.svg" alt="dots">
             <button>Add & Install Extension</button>
           </div>
 
-          <div class="section__3--browser-3">
-            <div class="broser-image"></div>
+          <div class="section__3--browser-3 browser">
+            <img src="/images/logo-opera.svg" alt="Opera">
             <h3>Add to Opera</h3>
             <p>Minimum version 46</p>
+            <img src="/images/bg-dots.svg" alt="dots">
             <button>Add & Install Extension</button>
           </div>
         </div>
@@ -189,39 +196,53 @@
         </div>
 
         <div class="section__4--accordion">
-          <!-- Question 1 -->
-          What is Bookmark?
 
-          <!-- Answer 1 -->
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
-          justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <strong>What is Bookmark?</strong>
+            </button>
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+              justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+            </div>
+          </div>
 
-          <!-- Question 2 -->
-          How can I request a new browser?
 
-          <!-- Answer 2 -->
-          Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
-          Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
-          ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
-          Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
 
-          <!-- Question 3 -->
-          Is there a mobile app?
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <strong>How can I request a new browser?</strong>
+            </button>
+            <div class="accordion-body">
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+              Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+              ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+              Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+            </div>
+          </div>
 
-          <!-- Answer 3 -->
-          Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
-          urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
-          sollicitudin ex et ultricies bibendum.
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <strong>Is there a mobile app?</strong>
+            </button>
+            <div class="accordion-body">
+              Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+              urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+              sollicitudin ex et ultricies bibendum.
+            </div>
+          </div>
 
-          <!-- Question 4 -->
-          What about other Chromium browsers?
-
-          <!-- Answer 4 -->
-          Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
-          vitae neque eget nisl gravida pellentesque non ut velit.
-
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <strong>What about other Chromium browsers?</strong>
+            </button>
+            <div class="accordion-body">
+              Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+              vitae neque eget nisl gravida pellentesque non ut velit.
+            </div>
+          </div>
         </div>
-        <a href="">More Info</a>
+        <a href="#" class="more">More Info</a>
 
       </div>
     </section>
@@ -230,17 +251,18 @@
 
     <!-- Fifth Section starts -->
 
-    <section class="section__4 ">
-      <div class="conainer">
+    <section class="section__5">
+      <div class="container">
         <div class="section__5--text">
           <p>35,000+ already joined</p>
           <h1>Stay up-to-date with what we’re doing</h1>
         </div>
+        <form action="">
+          <input type="email" placeholder="Enter your email address">
+          <button type="submit">Contact Us</button>
+        </form>
       </div>
-      <form action="">
-        <input type="email" placeholder="Enter your email address">
-        <button type="submit">Contact Us</button>
-      </form>
+
     </section>
   </main>
 
@@ -248,12 +270,9 @@
 
   <!-- Footer starts -->
 
-  <Footer class="footer">
+  <footer class="footer">
     <div class="container">
-      <div class="footer__logo">
-
-      </div>
-
+      <img src="images/logo-bookmark.svg" class="footer-image" alt="">
       <div class="footer__links">
         <ul>
           <li>Features</li>
@@ -263,11 +282,11 @@
       </div>
 
       <div class="footer__socials">
-        <a href=""></a>
-        <a href=""></a>
+        <img src="/images/icon-facebook.svg" alt="">
+        <img src="/images/icon-twitter.svg" alt="">
       </div>
     </div>
-  </Footer>
+  </footer>
 
 </body>
 
