@@ -888,7 +888,8 @@ width: 80%;
   }
 
   form {
-    display: block ruby;
+    display: flex;
+    align-items: center;
   }
 
   .field {
@@ -904,6 +905,9 @@ width: 80%;
     display: block;
     margin-left: 2rem;
     transition: all 0.2s ease;
+    margin: 0 0;
+    margin-left: 2rem;
+    margin-bottom: 2.5rem;
   }
 
   .section__5 button:hover {
