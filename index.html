@@ -9,7 +9,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <script src="script.js" defer></script>
+
+
   <title>Frontend Mentor | Bookmark landing page</title>
 </head>
 
@@ -23,14 +26,15 @@
 
       <div class="header__logo">
         <img src="/images/logo-bookmark.svg" alt="logo" class="logo">
+        <img src="/images/svgviewer-output (1).svg" alt="logo" class="replacement">
       </div>
 
       <nav>
         <ul>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Login</a></li>
+          <li><a href="#Features" class="nav-link">Features</a></li>
+          <li><a href="#Pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#Contact" class="nav-link">Contact</a></li>
+          <li><a href="#Login" class="nav-link">Login</a></li>
         </ul>
         <div class="nav__social">
           <img src="/images/icon-facebook.svg" alt="facebook" class="facebook icon">
@@ -77,7 +81,7 @@
 
     <!-- Second Section start -->
 
-    <section class="section__2 section">
+    <section class="section__2 section" id="Features">
       <div class="left-side-bx"></div>
       <div class="container">
 
@@ -91,47 +95,53 @@
 
         <div class="section__2--tab">
           <ul>
-            <li data-tab-target="#simple">Simple Bookmarking</li>
-            <li data-tab-target="#intelligent">Speedy Searching</li>
-            <li data-tab-target="#share">Easy Sharing</li>
+            <li class="link show" data-tab-target="#simple">Simple Bookmarking</li>
+            <li class="link" data-tab-target="#intelligent">Speedy Searching</li>
+            <li class="link" data-tab-target="#share">Easy Sharing</li>
           </ul>
 
           <div class="tab-content">
 
 
-            <div id="simple" data-tab-content>
+            <div id="simple" data-tab-content class="active">
+              <div class="data-tab">
 
-              <img src="/images/illustration-features-tab-1.svg" class="tab-image" alt="">
+                <img src="/images/illustration-features-tab-1.svg" class="tab-image" alt="">
 
-              <div class="tab-text">
-                <h2>Bookmark in one click</h2>
-                <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
-                  gives you complete control over how you manage your favourite sites.</p>
-                <a href="">More Info</a>
+                <div class="tab-text">
+                  <h2>Bookmark in one click</h2>
+                  <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
+                    gives you complete control over how you manage your favourite sites.</p>
+                  <a href="">More Info</a>
+                </div>
               </div>
             </div>
 
-            <div id="intelligent" data-tab-content class="active">
+            <div id="intelligent" data-tab-content>
+              <div class="data-tab">
 
-              <img src="/images/illustration-features-tab-2.svg" class="tab-image" alt="">
+                <img src="/images/illustration-features-tab-2.svg" class="tab-image" alt="">
 
-              <div class="tab-text">
-                <h2>Intelligent search</h2>
-                <p>Our powerful search feature will help you find saved sites in no time at all.
-                  No need to trawl through all of your bookmarks.</p>
-                <a href="">More Info</a>
+                <div class="tab-text">
+                  <h2>Intelligent search</h2>
+                  <p>Our powerful search feature will help you find saved sites in no time at all.
+                    No need to trawl through all of your bookmarks.</p>
+                  <a href="">More Info</a>
+                </div>
               </div>
             </div>
 
             <div id="share" data-tab-content>
+              <div class="data-tab">
 
-              <img src="/images/illustration-features-tab-3.svg" class="tab-image" alt="">
+                <img src="/images/illustration-features-tab-3.svg" class="tab-image" alt="">
 
-              <div class="tab-text">
-                <h2>Share your bookmarks</h2>
-                <p>Easily share your bookmarks and collections with others. Create a shareable
-                  link that you can send at the click of a button.</p>
-                <a href="">More Info</a>
+                <div class="tab-text">
+                  <h2>Share your bookmarks</h2>
+                  <p>Easily share your bookmarks and collections with others. Create a shareable
+                    link that you can send at the click of a button.</p>
+                  <a href="">More Info</a>
+                </div>
               </div>
             </div>
           </div>
@@ -141,7 +151,7 @@
 
     <!-- Third Section start -->
 
-    <section class="section__3 section">
+    <section class="section__3 section" id="Pricing">
       <div class="container">
 
         <div class="section__3--text">
@@ -251,14 +261,19 @@
 
     <!-- Fifth Section starts -->
 
-    <section class="section__5">
+    <section class="section__5" id="Contact">
       <div class="container">
         <div class="section__5--text">
           <p>35,000+ already joined</p>
           <h1>Stay up-to-date with what we’re doing</h1>
         </div>
-        <form action="">
-          <input type="email" placeholder="Enter your email address">
+        <form action="" id="form">
+          <div class="field">
+            <input id="email" type="email" placeholder="Enter your email address">
+            <i class='bx bxs-error-circle bx-lg'></i>
+            <i class='bx bx-check-circle bx-lg'></i>
+            <small></small>
+          </div>
           <button type="submit">Contact Us</button>
         </form>
       </div>
@@ -272,12 +287,12 @@
 
   <footer class="footer">
     <div class="container">
-      <img src="images/logo-bookmark.svg" class="footer-image" alt="">
+      <img src="images/svgviewer-output.svg" class="footer-image" alt="">
       <div class="footer__links">
         <ul>
-          <li>Features</li>
-          <li>Pricing</li>
-          <li>Contact</li>
+          <li><a href="#Features">Features</a></li>
+          <li><a href="#Pricing">Pricing</a></li>
+          <li><a href="#Contact">Contact</a></li>
         </ul>
       </div>
 
