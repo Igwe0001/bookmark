@@ -170,7 +170,6 @@ nav li:last-child {
 
 .section {
   width: 100%;
-  min-height: 100vh;
   height: 100%;
   padding: var(--section-padding) 0;
   text-align: center;
