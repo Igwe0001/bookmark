@@ -313,14 +313,24 @@ nav li:last-child {
     bottom: 0px;
 } */
 
+.data-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.tab-image-container {
+  max-width: 48rem;
+}
+
 .tab-image {
   width: 100%;
-  max-width: 48rem;
 }
 
 .tab-text {
   text-align: center;
-  margin-top: 7.2rem;
+  /* margin-top: 12rem; */
 }
 
 .tab-text h2 {
@@ -341,8 +351,9 @@ nav li:last-child {
   background-color: var(--soft-blue);
   color: var(--white);
   border-radius: 8px;
-  font-size: 1.7rem;
-  margin: 20px 0;
+  font-size: 1.6rem;
+  /* margin: 20px 0; */
+  display: inline-block;
   display: none;
 }
 
@@ -433,6 +444,7 @@ nav li:last-child {
   color: var(--white);
   border-radius: 0.5rem;
   font-weight: bold;
+  font-family: var(--font-family);
 }
 
 /* section 4 */
@@ -464,6 +476,7 @@ strong::after {
   color: var(--white);
   background-color: var(--soft-blue);
   border-radius: 0.5rem;
+   font-size: 1.6rem;
 }
 
 .accordion-item {
@@ -480,10 +493,16 @@ strong::after {
   color: var(--very-dark-blue);
   background-color: var(--white);
   outline: none;
+  font-family: var(--font-family);
 }
 
 .accordion-item strong {
   font-size: 1.5rem;
+  pointer-events: none;
+}
+
+.accordion-item:hover strong{
+color: var(--soft-red);
 }
 
 .accordion-header.active strong::after {
@@ -511,6 +530,7 @@ strong::after {
   text-decoration: none;
   padding: 2rem 2.5rem;
   display: block;
+ 
 }
 
 /* section 5 */
@@ -594,6 +614,7 @@ input::placeholder {
 
 .field.success input {
   border: 2px solid #2ecc71;
+  font-family: var(--font-family);
 }
 
 .field.error input {
@@ -629,6 +650,7 @@ input::placeholder {
   color: var(--white);
   background-color: var(--soft-red);
   border-radius: 0.5rem;
+  font-family: var(--font-family);
 }
 
 /* footer */
@@ -709,7 +731,7 @@ footer .container {
   header {
     height: 15rem;
   }
-  
+
   nav ul {
     flex-direction: row;
     margin-top: 0;
@@ -796,13 +818,13 @@ footer .container {
   }
 
   .section__1--link-button a:hover {
-    border: 2px solid var(--soft-blue);
+    outline: 2px solid var(--soft-blue);
     background-color: var(--white);
     color: var(--soft-blue);
   }
 
   .section__1--link-button a:last-child:hover {
-    border: 2px solid var(--grayish-blue);
+    outline: 2px solid var(--grayish-blue);
     background-color: var(--white);
     color: var(--grayish-blue);
   }
@@ -815,7 +837,7 @@ footer .container {
   .section__2--tab ul {
     display: flex;
     margin: 50px auto;
-width: 80%;
+    width: 80%;
   }
 
   .section__2--tab li {
@@ -825,8 +847,8 @@ width: 80%;
   }
 
   .data-tab {
-    display: flex;
     justify-content: space-between;
+    flex-direction: row;
   }
 
   .left-side-bx {
@@ -858,6 +880,10 @@ width: 80%;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(16, 19px);
     grid-column-gap: 15px;
+
+    button {
+      font-family: var(--font-family);
+    }
   }
 
   .section__3--browser-1 {
